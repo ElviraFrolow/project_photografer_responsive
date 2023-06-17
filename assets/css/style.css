@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 10%;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: Roboto-Bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-family: Roboto-Regular;
+  font: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* =============== HEADER ================ */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+nav img:nth-of-type(1) {
+  width: 100px;
+}
+
+nav img:nth-of-type(2) {
+  width: 30px;
+}
+
+/* =============== MAIN ================ */
+
+.text-content {
+  width: 70%;
+}
+
+/* =============== MAIN ================ */
+/* =============== GALLERY ================ */
+
+.foto-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* .foto-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+} */
+
+.mobile-paragraph {
+  display: none;
+}
+
+/* =============== MEDIA QUERIES ================ */
+
+@media screen and (max-width: 768px) {
+  /* .foto-gallery {
+    flex-wrap: wrap;
+  } */
+
+  .foto-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mobile-paragraph {
+    display: block;
+  }
+}
